@@ -1,0 +1,10 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">新規プロトタイプ投稿</h2>
+        <%# 部分テンプレートでフォームを表示する %>
+        <%# renderで部分テンプレート partialで_form.htmlを指定 locals:オプションで部分テンプレート内でも@prototype変数を使用できるように prototype:に@prototypeを代入 %>
+        <%= render partial: "form", locals: { prototype: @prototype } %>
+    </div>
+  </div>
+</div>
